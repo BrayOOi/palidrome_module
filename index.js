@@ -6,7 +6,7 @@ String.prototype.reverse = function() {
 }
 
 // Defines a Phrase object.
-function Phrase(contnet) {
+function Phrase(content) {
   this.content = content;
 
   // Returns content processed for palindrome testing.
