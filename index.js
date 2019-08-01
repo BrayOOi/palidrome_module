@@ -19,7 +19,6 @@ function Phrase(content) {
     if (this.processedContent()) {
       return this.processedContent() === this.processedContent().reverse();
     } else {
-      console.log("false");
       return false;
     }
   }
