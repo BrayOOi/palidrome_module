@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/brayden/repos/palidrome',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/brayden/.npm/pally/0.1.0/package.tgz not in flight; packing
+9 info lifecycle pally@0.1.0~prepublish: pally@0.1.0
+10 silly lifecycle pally@0.1.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/brayden/.npm/pally/0.1.0/package.tgz',
+11 verbose tar pack   '/home/brayden/repos/palidrome' ]
+12 verbose tarball /home/brayden/.npm/pally/0.1.0/package.tgz
+13 verbose folder /home/brayden/repos/palidrome
+14 verbose addLocalTarball adding from inside cache /home/brayden/.npm/pally/0.1.0/package.tgz
+15 silly cache afterAdd pally@0.1.0
+16 verbose afterAdd /home/brayden/.npm/pally/0.1.0/package/package.json not in flight; writing
+17 verbose afterAdd /home/brayden/.npm/pally/0.1.0/package/package.json written
+18 silly publish { name: 'pally',
+18 silly publish   version: '0.1.0',
+18 silly publish   description: 'Palidrome detector',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'mocha' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/BrayOOi/palidrome_module.git' },
+18 silly publish   keywords: [ 'palindrome', 'javascript', 'js' ],
+18 silly publish   author: { name: 'Pally' },
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/BrayOOi/palidrome_module/issues' },
+18 silly publish   homepage: 'https://github.com/BrayOOi/palidrome_module#readme',
+18 silly publish   readme: 'This is a sample module. \n\nTo use the module, follow the instructions as below.\n```\n$ npm install --global pally\n```\n\nIn your document, \n```\nlet Phrase = require("pally");\nlet foo = new Phrase("var");\n```\n\nYou can determine whether the content is a palindrome by calling the ```palindrome``` method.\n```\nfoo.palindrome();\n// false\n```',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'c087d6a2f2a6851e800ede9ae8394e1c67815359',
+18 silly publish   _id: 'pally@0.1.0',
+18 silly publish   _shasum: 'c5107b89881b00649b6ff91b9e5ae41b0b534f40',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name pally
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/pally
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /home/brayden/.npm/pally/0.1.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/pally
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 5:09:30 PM
+29 verbose request using bearer token for auth
+30 verbose request id 356f5a9e08acd7c4
+31 http request PUT https://registry.npmjs.org/pally
+32 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+33 info attempt registry request try #2 at 5:09:51 PM
+34 verbose request using bearer token for auth
+35 http request PUT https://registry.npmjs.org/pally
+36 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+37 info attempt registry request try #3 at 5:11:01 PM
+38 verbose request using bearer token for auth
+39 http request PUT https://registry.npmjs.org/pally
+40 verbose request invalidating /home/brayden/.npm/registry.npmjs.org/pally on PUT
+41 error publish Failed PUT undefined
+42 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+42 verbose stack     at errnoException (dns.js:50:10)
+42 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+43 verbose cwd /home/brayden/repos/palidrome
+44 error Linux 4.18.0-25-generic
+45 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+46 error node v8.10.0
+47 error npm  v3.5.2
+48 error code ENOTFOUND
+49 error errno ENOTFOUND
+50 error syscall getaddrinfo
+51 error network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+52 error network This is most likely not a problem with npm itself
+52 error network and is related to network connectivity.
+52 error network In most cases you are behind a proxy or have bad network settings.
+52 error network
+52 error network If you are behind a proxy, please make sure that the
+52 error network 'proxy' config is set properly.  See: 'npm help config'
+53 verbose exit [ 1, true ]
